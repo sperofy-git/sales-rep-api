@@ -25,4 +25,22 @@ public class ListCandidatesService {
 		return candidateList;
 	}
 	
+	public Candidate removeCandidate(int candidateId) {
+		
+		Candidate c = findById(candidateId);
+		if (c==null) return null;
+		candidateList.remove(c);
+		return c;
+		
+	}
+	
+	public Candidate findById(int candidateId) {
+		for(Candidate c:candidateList) {
+			if (c.getId() == candidateId) {
+				return c;
+			}			
+		}
+		return null;
+	}
+	
 }
