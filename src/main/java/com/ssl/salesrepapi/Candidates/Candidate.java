@@ -3,7 +3,7 @@ package com.ssl.salesrepapi.Candidates;
 public class Candidate {
 	
 	int Id;
-	String Name;
+	String CandidateName;
 	String PrimarySkill;
 	String SecondarySkill;
 	
@@ -14,10 +14,10 @@ public class Candidate {
 	}
 	
 	
-	public Candidate(int id, String name, String primarySkill, String secondarySkill) {
+	public Candidate(int id, String candidateName, String primarySkill, String secondarySkill) {
 		super();
 		Id = id;
-		Name = name;
+		CandidateName = candidateName;
 		PrimarySkill = primarySkill;
 		SecondarySkill = secondarySkill;
 	}
@@ -29,11 +29,11 @@ public class Candidate {
 	public void setId(int id) {
 		Id = id;
 	}
-	public String getName() {
-		return Name;
+	public String getcandidateName() {
+		return CandidateName;
 	}
-	public void setName(String name) {
-		Name = name;
+	public void setcandidateName(String candidateName) {
+		CandidateName = candidateName;
 	}
 	public String getPrimarySkill() {
 		return PrimarySkill;

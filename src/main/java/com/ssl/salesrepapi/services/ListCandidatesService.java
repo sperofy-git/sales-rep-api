@@ -43,4 +43,25 @@ public class ListCandidatesService {
 		return null;
 	}
 	
+	public Candidate save(Candidate c) {
+		if(c.getId()==-1)
+		{
+			c.setId(++idCounter);
+			candidateList.add(c);
+		}
+		else {
+			candidateList.remove(findById(c.getId()));
+			candidateList.add(c);
+		}
+		return c;
+	}
+
+	public Candidate getCandidate(int id) {
+		// TODO Auto-generated method stub
+		Candidate c = findById(id);
+		if (c==null) return null;
+
+		return c;
+	}
+	
 }
