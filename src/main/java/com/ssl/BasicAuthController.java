@@ -1,4 +1,4 @@
-package com.ssl.salesrepapi.security;
+package com.ssl;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;

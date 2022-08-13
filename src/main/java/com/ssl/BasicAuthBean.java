@@ -1,4 +1,4 @@
-package com.ssl.salesrepapi.security;
+package com.ssl;
 
 public class BasicAuthBean {
 
